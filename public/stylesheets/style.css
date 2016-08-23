@@ -1,0 +1,156 @@
+@-ms-viewport{
+  width: device-width;
+}
+.g-position-relative {
+  position: relative;
+}
+.g-position-absolute {
+  position: absolute;
+}
+.g-position-fixed{
+  position: fixed;
+}
+.g-center-x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.g-center-y {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.g-center {
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.g-window-height {
+  height: 100vh;
+}
+.container {
+  padding-top: 76px;
+}
+.underline {
+  text-decoration: underline;
+}
+.hairline-down-arrow {
+  width: 65px;
+  height: 65px;
+  position: relative;
+  background-color: white;
+}
+.hairline-down-arrow:after {
+  content: "";
+  position: absolute;
+  top: 4%;
+  left: 54%;
+  width: 30px;
+  height: 30px;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg) translate(-50%) skew(10deg, 10deg);
+  transform-origin: left;
+  border-style: solid;
+  border-color: #3535fc;
+}
+.fp-controlArrow {
+  width: 65px;
+  height: 65px;
+  position: relative;
+  background-color: white;
+  border-width: 0 !important;
+}
+.fp-controlArrow:after {
+  content: "";
+  position: absolute;
+  top: 4%;
+  left: 54%;
+  width: 30px;
+  height: 30px;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg) translate(-50%) skew(10deg, 10deg);
+  transform-origin: left;
+  border-style: solid;
+  border-color: #3535fc; 
+}
+.fp-next {
+  margin-right: 30px;
+}
+.fp-next:after {
+  transform: rotate(315deg) translate(-50%) skew(10deg, 10deg);
+}
+.fp-prev {
+  margin-left: 30px;
+}
+.fp-prev:after {
+  transform: rotate(135deg) translate(-50%) skew(10deg, 10deg);
+}
+.fp-tableCell {
+  height: 100% !important;
+}
+
+@media(max-width:767px){
+  .g-slides {
+    width: 620px;
+  }
+  .g-stamp {
+    width: 90px;
+  }
+}
+@media(min-width:768px){
+  .g-slides {
+    width: 720px;
+  } 
+  .g-stamp {
+    width: 100px;
+  }
+}
+@media(min-width:992px){
+  .g-slides {
+    width: 820px;
+  }  
+  .g-stamp {
+    width: 110px;
+  }
+}
+@media(min-width:1200px){
+  .g-slides {
+    width: 920px;
+  }  
+  .g-stamp {
+    width: 120px;
+  }
+}
+
+.g-border-div {
+  height: 3px;
+  width: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1a1f4+0,3535fc+67 */
+  background: rgb(225,161,244); /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  rgba(225,161,244,1) 0%, rgba(53,53,252,1) 67%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  rgba(225,161,244,1) 0%,rgba(53,53,252,1) 67%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  rgba(225,161,244,1) 0%,rgba(53,53,252,1) 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1a1f4', endColorstr='#3535fc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+/* MAIL CHIMP */
+#mce-EMAIL {
+  border: 0px;
+  border-bottom: 2px solid #3535fc;
+  width: 560px;
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+  color: #3535fc;
+}	
+#mce-EMAIL:focus ,
+#mc-embedded-subscribe:focus {
+  outline-width: 0;
+}
+#mc-embedded-subscribe {
+  border: 0px;
+  padding: 10px 20px;
+  background-color: white;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #3535fc;
+}
