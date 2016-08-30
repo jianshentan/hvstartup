@@ -175,7 +175,7 @@ body {
   vertical-align: top;
 }
 .hv-vi-content {
-  height: 80vh;
+  height: 560px;
 }
 .hv-vi-text {
   height: 560px;
@@ -252,6 +252,7 @@ body {
 
 .hv-contact-section {
   height: 80vh;
+  max-height: 600px;
   min-height: 500px;
 }
 .hv-form-wrapper {
