@@ -5,40 +5,39 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-		<title>Gradient</title>
+		<title>Hello Velocity</title>
 		<link rel="canonical" href="http://www.gradientpay.com">
     <meta name="keywords" content="Gradient, sliding scale, money, equity, scale, socialism, social, payment, pricing, finance, checkout, ecommerce, commerce" >
     <meta name="description" content="Gradient - A payment processing system that considers the customer's ability to pay.">
    
     <!--FACEBOOK-->
-    <meta property="og:title" content="Gradient" >
-    <meta property="og:site_name" content="Gradient">
-    <meta property="og:url" content="http://www.gradientpay.com" >
-    <meta property="og:description" content="Gradient - A payment processing system that considers the customer's ability to pay." >
-    <meta property="og:image" content="http://www.gradientpay.com/images/share-banner.png" >
+    <meta property="og:title" content="" >
+    <meta property="og:site_name" content="">
+    <meta property="og:url" content="" >
+    <meta property="og:description" content="" >
+    <meta property="og:image" content="" >
     <meta property="og:type" content="" >
     <meta property="og:locale" content="en_US" >
     
     <!--TWITTER-->
     <meta property="twitter:card" content="summary_large_image" >
-    <meta property="twitter:title" content="Gradient" >
-    <meta property="twitter:description" content="Gradient - A payment processing system that considers the customer's ability to pay." >
+    <meta property="twitter:title" content="" >
+    <meta property="twitter:description" content="" >
     <meta property="twitter:creator" content="@hellovelocity" >
-    <meta property="twitter:url" content="http://www.gradientpay.com" >
-    <meta property="twitter:image" content="http://www.gradientpay.com/images/share-banner.png" >
-    		
+    <meta property="twitter:url" content="" >
+    <meta property="twitter:image" content="" >
+	    		
 		<!-- add bootstrap stylesheets -->
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  	<!-- add google fonts -->
+  	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Noto+Serif:400,400i,700" rel="stylesheet">
   
 		<!-- add custom stylesheets -->
 		<link rel="stylesheet" href="stylesheets/style.css">
 		<% if (mobile == "true") { %>
-      <link rel="stylesheet" href="stylesheets/m_style.css">
-    <% } %>
-		
-		<!-- add fullpage.js stylesheets -->
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css">
-		
+	  <link rel="stylesheet" href="stylesheets/m_style.css">
+	  <% } %>
+	
 		<script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -49,317 +48,429 @@
       ga('send', 'pageview');
     </script>
 	</head>
-	
-	<!-- load jquery minified js -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<!-- load bootstrap minified js -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<!-- load fullpage.js library -->
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/vendors/jquery.easings.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/vendors/scrolloverflow.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.js"></script>
-	
+
 	<body>
-		
-		<% if (mobile != "true") { %>
-		<div id="header" class="g-position-fixed g-center-x h4" style="
-			top: 0px;
-			margin: 0px;
-			width: 100vw;
-			height: 60px;
-			line-height: 55px;
-			color: #3535fc;
-			background-color: white;
-			z-index: 100;">
-			<div style="
-				margin-left: 20px;
-				float: left;
-				display: inline-block;">
-				<a href="#home"><img src="images/logo-only-text.png" height="22"></a>
+		<!-- load jquery minified js -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<!-- load bootstrap minified js -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- scroll reveal js -->
+	  <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+	  
+		<!-- Navigation Bar -->
+		<% if (mobile == "true" ){ %>
+		<% } else { %>
+		<div class="hv-nav hv-bg-white" style="position:fixed;z-index:1000;">
+			<div class="hv-relative" style="padding-top:12px;padding-bottom:12px;height:80px;width:100vw;">
+				<img class="hv-inline-block hv-absolute" src="/images/logo.png" width="56" height="56" style="left:20px;">
+				<div class="hv-inline-block hv-absolute" style="right:40px;line-height:56px;">
+					<a href="http://lab.hellovelocity.com" target="_blank" class="hv-dark-gray">Home</a>
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<a href="http://lab.hellovelocity.com" target="_blank" class="hv-dark-gray">Lab</a>
+					&nbsp;
+					&nbsp;
+					&nbsp;
+					<a href="mailto:friend@hellovelocity.com" target="_blank" class="hv-dark-gray">Contact</a>
+				</div>
 			</div>
-			<div style="
-				margin-right: 20px;
-				float: right;
-				text-align: center;">
-				<a href="#join-us" style="color:#3535fc;">
-					Join our mission
-					<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-				</a>
-			</div>
-			<div class="g-border-div g-position-absolute" style="
-				height:3px;
-				bottom: 0px;	
-				"></div>
-		</div>
+		</div>	
+		<div class="" style="height:80px;"></div>
 		<% } %>
 		
-		<div id="fullpage">
-		
-			<div class="section g-position-relative" data-anchor="home">
-			  <% if (mobile == "true") { %>
-    		<div id="header" class="g-position-absolute g-center-x h4" style="
-    			top: 0px;
-    			margin: 0px;
-    			width: 100vw;
-    			height: 60px;
-    			line-height: 55px;
-    			color: #3535fc;
-    			background-color: white;
-    			z-index: 100;">
-    			<div style="
-    				margin-left: 20px;
-    				float: left;
-    				display: inline-block;">
-    				<img src="images/logo-only-text.png" style="width:20vw;">
-    			</div>
-    			<div style="
-    				margin-right: 20px;
-    				float: right;
-    				text-align: center;">
-    				<a href="#join-us" style="color:#3535fc;">
-    					Join our mission
-    					<span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
-    				</a>
-    			</div>
-    			<div class="g-border-div g-position-absolute" style="
-    				height:3px;
-    				bottom: 0px;	
-    				"></div>
-    		</div>
-    		<% } %>
-    		
-				<div class="container g-window-height g-position-relative" style="text-align:center;">
-					<div class="g-center g-position-absolute" style="color: #3535fc;width:90vw;">
-						<img class="" src="images/logo-no-text.png" style="width:150px;">	
-						<div class="h1">Priced With Kindness.</div>	
-						<div class="h4">Gradient is sliding scale pricing that considers your ability to pay.</div>	
-					</div>
-					<div class="g-position-absolute g-center-x" style="bottom:20px;">
-						<a href="#how-does-it-work"><div class="hairline-down-arrow"></div></a>
-					</div>
-				</div>	
-			</div>	
-			
-			<div class="section" data-anchor="how-does-it-work">
-			
-				<!-- slide 1 -->
-				<div class="slide container g-window-height" style="text-align:center;">
-					<% if (mobile != "true") { %> <br> <% } %>
-					
-					<% if (mobile == "true") { %>
-					<div class="h3 g-slide-title">
-					<% } else { %>
-					<div class="h2" style="margin-top:0px;top:36px;text-align:center;color:#3535fc">
-					<% } %>
-						1. Gradient is an equitable way to shop.
-					</div>
-					<% if (mobile != "true") { %> 
-					<br>
-					<br>
-					<% } %>
-					<% if (mobile == "true") { %>
-					  <img class="g-slides" src="images/m_slide1.png">
-          <% } else { %>
-					  <img class="g-slides" src="images/d_slide1.png">
-          <% } %>
-				</div>
-				
-				<!-- slide 2 -->
-				<div class="slide container g-window-height" style="text-align:center;">
-					<% if (mobile != "true") { %> <br> <% } %>
-					<% if (mobile == "true") { %>
-					<div class="h3 g-slide-title">
-					<% } else { %>
-					<div class="h2" style="margin-top:0px;top:36px;text-align:center;color:#3535fc">
-					<% } %>
-					  2. Log into your Gradient account.
-					</div>
-					<% if (mobile != "true") { %> 
-					<br>
-					<br>
-					<% } %>
-					<% if (mobile == "true") { %>
-					  <img class="g-slides" src="images/m_slide2.png">
-          <% } else { %>
-					  <img class="g-slides" src="images/d_slide2.png">
-          <% } %>
-				</div>
-					
-				<!-- slide 3 -->
-				<div class="slide container g-window-height" style="text-align:center;">
-					<% if (mobile != "true") { %> <br> <% } %>
-					<% if (mobile == "true") { %>
-					<div class="h3 g-slide-title">
-					<% } else { %>
-					<div class="h2" style="margin-top:0px;top:36px;text-align:center;color:#3535fc">
-					<% } %>
-					  3. Get your price, based on your income.
-					</div>
-					<% if (mobile != "true") { %>
-					<br>
-					<br>
-					<% } %>
-					<% if (mobile == "true") { %>
-					  <img class="g-slides" src="images/m_slide3.png">
-          <% } else { %>
-					  <img class="g-slides" src="images/d_slide3.png">
-          <% } %>
-				</div>		
-					
-				<!-- slide 4 -->
-				<div class="slide container g-window-height" style="text-align:center;">
-					<% if (mobile != "true") { %> <br> <% } %>
-					<% if (mobile == "true") { %>
-					<div class="h3 g-slide-title">
-					<% } else { %>
-					<div class="h2" style="margin-top:0px;top:36px;text-align:center;color:#3535fc">
-					<% } %>
-					  4. Checkout out, and feel good about it.
-					</div>
-					<% if (mobile != "true") { %> 
-					<br>
-					<br>
-					<% } %>
-					<% if (mobile == "true") { %>
-					  <img class="g-slides" src="images/m_slide4.png">
-          <% } else { %>
-					  <img class="g-slides" src="images/d_slide4.png">
-          <% } %>
-				</div>
+		<!-- Banner -->
+		<div class="hv-relative hv-bg-blue" style="
+			height:36vh;
+			min-height:360px;
+			background-image:url('/images/bg-pattern.png');
+			background-attachment: fixed;
+			background-repeat:repeat">
+			<div class="hv-absolute hv-absolute-center hv-align-center hv-white" style="width:70vw;min-width:300px;max-width:600px;">
+				<div class="" style="margin-bottom:10px;">Hello Velocity</div>
+				<div class="h1">We design powerful brands for the modern startup</div>
 			</div>
-			
-			<div class="section" data-anchor="why-gradient">
-					<% if (mobile == "true") { %>
-  				<div class="container" style="width:80vw;margin-left:10vw;color:#3535fc;">
-  				  <div style="text-align:center;width:100%;margin-top:-5vh;">
-  				    <img class="g-stamp" src="images/gradient-cert.png" style="width:20vw;">
-  				  </div>
-  				  <br>
-  					<div class="h4">If you see our seal on a product, it means you are shopping at a store that is working to treat its customers equitably with Gradient’s sliding scale!</div>
-  					<div class="h3">What does it do?</div>	
-  					<div class="h4">When you make an account through Gradient and connect your online bank account(s), Gradient estimates your annual income and adjusts the price you pay, within a certain range.</div>
-  					<div class="h4">For people whose finances are tight, Gradient lowers prices. For people whose finances are above median, prices are higher, and that increase contributes directly to helping other members of the community</div>
-  				</div>
-  					
-          <% } else { %>
-				  <div class="container" style="width:80vw;margin-left:10vw;color:#3535fc;">
-  					<div class="col-xs-3 g-position-relative">
-  						<img class="g-stamp g-center-x g-position-absolute" src="images/gradient-cert.png" style="margin-top:20px;">
-  					</div>	
-  					<div class="col-xs-8">
-  						<div class="h3">Look for Gradient when shopping online!</div>	
-  						<div class="h5">If you see our seal on a product, it is priced on Gradient’s sliding scale system. And you are shopping at a store that is working to treat its customers equitably!</div>
-  						<br>
-  						<div class="h3">What does it do?</div>	
-  						<div class="h5">When you make an account through Gradient and connect your online bank account(s), Gradient estimates your annual income and adjusts the price you pay, within a certain range.</div>
-  						<div class="h5">For people whose finances are tight, Gradient lowers prices to ease the burden of purchasing. For people whose finances are above median prices will be higher, and that increase will contribute directly to helping other members of the community</div>
-  						<br>
-  						<div class="h3">What does it mean?</div>	
-  						<div class="h5">By using Gradient you are participating in a healthier, more responsible, economic process</div>
-  						<div class="h5">Economic disparity in the US is the largest in all of the western world. Gradient and its users believe that we have an obligation towards economic equity -- and that we can build towards that goal together.</div>
-  					</div>	
-				  </div>
-          <% } %>
-			</div>
-			
-			<% if (mobile == "true") { %>
-	    <div class="section" data-anchor="why-gradient2">
-	      <div class="container" style="width:80vw;margin-left:10vw;color:#3535fc;">
-					<div class="h2">Economic disparity in the US is the largest in all of the western world.</div>
-					<div class="h2">Gradient and its users believe that we have an obligation towards economic equity -- and that we can build toward that goal together.</div>     
-					<div class="h2">By using Gradient you are participating in a healthier, more responsible, economic process</div>
-	      </div>
-	    </div>
-			<% } %>
-			
-			<div class="section" data-anchor="join-us">
-				<div class="container">
-					<div class="g-position-absolute g-center" style="text-align:center;width:90vw;">
-						
-						<div class="h2" style="color:#3535fc;font-weight:700;">Sign up below</div>
-						<div class="h4" style="color:#3535fc;">Join us to build systems for greater economic equity!</div>
-						
-					  <% if (mobile != "true") { %>
-						<br>
-						<br>
-						<% } %>
-						<br>
-						<br>
-						
-						<!-- Begin MailChimp Signup Form -->
-						<div id="mc_embed_signup">
-						<form action="//hellovelocity.us1.list-manage.com/subscribe/post?u=f6165db2f72795931525c002b&amp;id=d960918538" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						  <div id="mc_embed_signup_scroll">
-								<div class="mc-field-group">
-									<!--<label for="mce-EMAIL">Email Address </label>-->
-									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your Email">
-								</div>
-								<div id="mce-responses" class="clear">
-									<div class="response" id="mce-error-response" style="display:none"></div>
-									<div class="response" id="mce-success-response" style="display:none"></div>
-								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-								<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f6165db2f72795931525c002b_d960918538" tabindex="-1" value=""></div>
-								<br>
-								<div class="clear" style="text-align:center;">
-									<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-									<div id="mc-verify" class="h4" style="color:#3535fc;opacity:0;">To verify your email, please click on the link that we sent you.</div>
-								</div>
-						  </div>
-						</form>
-						</div>
-
-						<!--End mc_embed_signup-->
-						
-					  <% if (mobile != "true") { %>
-						<br>
-						<br>
-						<% } %>
-						<br>
-						
-						<div class="h5">Are you interested in <span style="color:#3535fc;">Gradient</span> as a  business owner?</div>
-						<div class="h5">Please email us at <a href="mailto:gradient@hellovelocity.com" target="_blank" style="color:#3535fc;">gradient@hellovelocity.com</a> and we'll get back to you.</div>
-						
-					</div>
-					
-					<a href="#home"><div class="h5 g-center-x g-position-absolute" style="color:#3535fc;bottom:20px;">back to top</div></a>
-				</div>
-			</div>
-				
 		</div>
 		
+		<!-- Web Design & Development -->
+		<div class="">
+			<div class="hv-section container hv-relative">
+								
+				<% if (mobile == "true" ){ %>
+				<% } else { %>
+				<!-- browser -->
+				<div class="hv-browser-box">
+					<div class="hv-browser-nav">
+						<div class="hv-browser-btn" style="background-color: white"></div>
+						<div class="hv-browser-btn" style="background-color: white"></div>
+						<div class="hv-browser-btn" style="background-color: white"></div>
+					</div>
+					<div class="hv-browser-body hv-relative">
+						<div class="hv-browser-page hv-absolute hv-absolute-center">
+							<div class="hv-absolute hv-absolute-center hv-align-center" style="width: 70%">
+								<div class="h1 hv-blue">Web Design +<br>Development</div>
+								<div class="hv-dark-gray" style="margin-top:10px">
+									Clean and bold design, implemented on a modern stack.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<% } %>
+				
+				<% if (mobile == "true" ){ %>
+				
+				<!-- mobile + ecommerce-->
+
+				<div class="hv-mobile-box">
+					<div class="hv-relative hv-mobile">
+						<div class="hv-mobile-screen hv-absolute">
+							<div class="hv-mobile-content hv-absolute">
+								<div class="hv-absolute hv-absolute-center hv-align-center">
+									<div class="h2">100% Mobile Design</div>
+									<br>
+									<br>
+								</div>
+								<div class="h5 hv-absolute hv-mobile-ecommerce hv-align-center">
+									E-Commerce Design and Development
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hv-mobile-home-btn hv-absolute">
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="h1 hv-blue hv-align-center">Web Design,<br>Development<br> & E-Commerce</div>
+				<% } else { %>
+				
+				<!-- mobile -->
+				<div class="hv-mobile-box">
+					<div class="hv-relative hv-mobile">
+						<div class="hv-mobile-screen hv-absolute">
+							<div class="hv-mobile-content hv-absolute">
+								<div class="hv-absolute hv-absolute-center hv-align-center">
+									<div class="h3">100% mobile</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="hv-mobile-home-btn hv-absolute">
+					</div>
+				</div>
+				<!-- ecommerce -->
+				<div class="hv-ecommerce-box hv-shadow">
+					<div class="hv-ecommerce-nav">
+						<div class="hv-browser-btn" style="background-color: #ccc"></div>
+						<div class="hv-browser-btn" style="background-color: #ccc"></div>
+						<div class="hv-browser-btn" style="background-color: #ccc"></div>				
+					</div>
+					<div class="hv-ecommerce-content hv-relative">
+						<div class="hv-ecommerce-content-circle hv-inline-block"></div>
+						<div class="hv-ecommerce-content-text h4 hv-inline-block">
+							E-Commerce <br> Design & Development
+						</div>
+					</div>
+				</div>
+				<% } %>
+				
+				<% if (mobile == "true" ){ %>
+				<% } else { %>
+				<br>
+				<br>
+				<br>
+				<br>
+				<% } %>
+				<br>
+				
+				<!-- tag line -->
+				<div class="hv-web-tagline hv-align-center hv-dark-gray">
+					At Hello Velocity, we don't do out-of-the-box templates. 
+					Instead, come to us for a unique digital experience, built to modern standards.	
+				</div>
+			</div>
+		</div>
+			
+		<!-- Visual Identity -->
+		<div class="hv-bg-blue">
+			<div class="row" style="margin:0px;">
+				<div class="hv-vi-content col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="hv-vi-wrapper hv-absolute hv-absolute-center hv-align-center">
+						<img src="images/banana-emoji.png" width="120" height="120" class="">
+						<br>
+						<br>
+						<div class="h1 hv-white" style="padding-bottom:10px;">Visual Identity</div>	
+						<div class="hv-white">
+							We capture the essence and culture of a brand and transforms it 
+							into a creative and lasting visual identity. We make bold brands 
+							designed to wow.</div>
+					</div>
+				</div>
+				<div class="hv-vi-text col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<img src="images/banana-pinkhouse.png" class="hv-banana-image hv-absolute hv-absolute-center">
+				</div>
+			</div>
+		</div>
+		
+		<!-- Rich Analytics -->
+		<div class="hv-bg-light-gray" style="
+			border-top: 2px solid #ccc;
+			border-bottom: 2px solid #ccc;
+			overflow-y:hidden;
+			height:720px;">
+			<div class="hv-section container">
+				<div class="h1 hv-blue hv-align-center" style="
+					padding-bottom:10px;">Rich Analytics</div>
+				<div class="hv-dark-gray hv-align-center">
+					We work with the latest and greatest analytics tools to provide you 
+					with rich dynamic dashboards.<br>Find out more about whose looking 
+					and what they are looking for. </div>
+				
+				<br>
+				<br>
+				
+				<% if (mobile == "true" ){ %>
+				<div class="hv-bi-box" style="">
+					<div class="hv-bi-page hv-relative">
+						<div class="hv-bi-content-wrapper">
+							<div class="hv-absolute" style="
+								top:0px;
+								height: 40px;
+								background-color:white;
+								width:100%;">
+								<div class="h4 hv-white" style="
+									background-color:#ffdc29;
+									text-align: center;
+									margin: 0px;
+									line-height: 40px;">Marketing Intelligence</div>
+							</div>
+							<div class="" style="
+								padding-top:40px;
+								margin-right:5vw;
+								margin-left:5vw;">
+								<!--<div class="h4 hv-gray">Who is looking, and what are they looking for?</div>-->
+								<div class="hv-bi-image"><img src="/images/graph1.png"></div>
+								<div class="hv-bi-image"><img src="/images/graph2.png"></div>
+								<div class="hv-bi-image"><img src="/images/graph3.png"></div>
+								<div class="hv-bi-image"><img src="/images/graph4.png"></div>
+								<div class="hv-bi-image"><img src="/images/graph5.png"></div>
+								<div class="hv-bi-image"><img src="/images/graph6.png"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<% } else { %>
+				<br>
+				<!-- BI browser -->
+				<div class="hv-bi-box" style="">
+					<div class="hv-bi-nav">
+						<div class="hv-browser-btn" style="background-color: white"></div>
+						<div class="hv-browser-btn" style="background-color: white"></div>
+						<div class="hv-browser-btn" style="background-color: white"></div>
+					</div>
+					<div class="hv-bi-page hv-relative">
+						<div class="hv-bi-content-wrapper">
+							<div class="hv-absolute" style="
+								top:0px;
+								padding-left: 60px;
+								height: 60px;
+								background-color:white;
+								width:100%;">
+								<div class="h3 hv-gray" style="
+									padding-left: 20px;
+									line-height: 60px;">Marketing Intelligence</div>
+								<div class="hv-absolute" style="
+									top:15px;
+									right:15px;
+									border-radius: 50%;
+									width:30px;
+									height:30px;
+									background-color: #333;"></div>
+							</div>
+							<div class="hv-relative" style="
+								background-color: #ffdc29;
+								padding: 0px;
+								width:60px;
+								height:60px;"></div>
+							<div class="hv-relative" style="
+								width: 60px;
+								height: 100%;
+								background-color: #333;"></div>
+							<div class="hv-absolute" style="
+								padding: 20px;
+								top: 60px;
+								left:60px;">
+								<div class="h3 hv-gray">Who is looking, and what are they looking for?</div>
+								<div class="hv-bi-image"><img src="/images/graph1.png"></div>
+								<div class="hv-bi-image"><img src="/images/graph2.png"></div>
+								<div class="hv-bi-image"><img src="/images/graph3.png"></div>
+								<div class="hv-bi-image"><img src="/images/graph4.png"></div>
+								<div class="hv-bi-image"><img src="/images/graph5.png"></div>
+								<div class="hv-bi-image"><img src="/images/graph6.png"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<% } %>
+				
+			</div>	
+		</div>
+		
+		<!-- Services -->
+		<div class="">
+			<div class="hv-section hv-services container">
+				<div class="row">
+					<div class="hv-service col-md-4 col-sm-6">
+						<div style="display:table;margin:0 auto;">
+							<div class="hv-service-icon"><img src="images/icon1.png"></div>
+							<div class="hv-service-text">Web Development</div>
+						</div>
+					</div>
+					<div class="hv-service col-md-4 col-sm-6">
+						<div style="display:table;margin:0 auto;">
+							<div class="hv-service-icon"><img src="images/icon2.png"></div>
+							<div class="hv-service-text">Branding & Visual Identity</div>
+						</div>
+					</div>
+					<div class="hv-service col-md-4 col-sm-6">
+						<div style="display:table;margin:0 auto;">
+							<div class="hv-service-icon"><img src="images/icon3.png"></div>
+							<div class="hv-service-text">Social Media</div>
+						</div>
+					</div>
+					<div class="hv-service col-md-4 col-sm-6">
+						<div style="display:table;margin:0 auto;">
+							<div class="hv-service-icon"><img src="images/icon4.png"></div>
+							<div class="hv-service-text">Web + Mobile + Social Analytics</div>
+						</div>
+					</div>
+					<div class="hv-service col-md-4 col-sm-6">
+						<div style="display:table;margin:0 auto;">
+							<div class="hv-service-icon"><img src="images/icon5.png"></div>
+							<div class="hv-service-text">E-Commerce</div>
+						</div>
+					</div>
+					<div class="hv-service col-md-4 col-sm-6">
+						<div style="display:table;margin:0 auto;">
+							<div class="hv-service-icon"><img src="images/icon6.png"></div>
+							<div class="hv-service-text">Content Marketing</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Contact -->
+		<div class="hv-contact-section hv-relative hv-bg-blue" style="
+			background-image:url('/images/bg-pattern.png');
+			background-attachment: fixed;
+			background-repeat:repeat">
+			<div class="hv-form-wrapper hv-align-center hv-white">
+				<br>
+				<div class="h1">Let's Collaborate!</div>
+				<br>
+				<div class="hv-white">
+					Leave us with your details and we’ll get back to you as soon as we can
+				</div>
+				<br>
+				<div class="hv-form">
+					<div class="row">
+					  <div class="col-sm-6 col-xs-12">
+					  	<input id="firstname" class="field form-control" name="firstname" 
+					  		type="text" placeholder="First Name" />
+					  </div>
+		        <div class="col-sm-6 col-xs-12">
+		        	<input id="lastname" class="field form-control" name="lastname" 
+		        		type="text" placeholder="Last Name" />
+		        </div>
+					</div>
+					<div class="row">
+		        <div class="col-sm-6 col-xs-12">
+		        	<input id="email" class="field form-control" name="email" 
+		        		type="email" placeholder="Email" required />
+		        </div>
+		        <div class="col-sm-6 col-xs-12">
+		        	<input id="organization" class="field form-control" name="organization" 
+		        		type="text" placeholder="Organization" />
+		        </div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<input id="description" class="field form-control" name="description" 
+								type="textarea" placeholder="How would you like to collaborate?">
+						</div>
+					</div>
+					<button class="btn btn-default" id="submit" style="
+						width: 100%;
+						font-weight: 800;
+						color: blue;
+						padding-right:15px;
+						padding-left:15px;
+						background-color: #ffdc29;">SUBMIT</button>
+					<br>
+					<br>
+		      <div class="" id="loadingLabel" style="display:none;">
+		      	Loading...
+		      </div>      
+		      <div class="" id="invalidLabel" style="display:none;color:red;">
+		      	Some or more of the fields you entered are invalid.
+		      </div>
+		      <div class="" id="successLabel" style="display:none;">
+		      	Thank you for your interest! Please expect an email back from us soon :)
+		      </div>   
+		      <div class="" id="errorLabel" style="display:none;color:red;">
+		      	Sorry, your information could not be sent. Please try again later.
+		      </div>   
+				</div>
+			</div>
+		</div>
+		
+		<!-- About -->
+		<div class="">
+			<div class="row" style="margin:0px;">
+				<div class="hv-mission col-lg-6 col-md-6 col-sm-12 col-xs-12">
+					<div class="hv-mission-content hv-absolute hv-absolute-center">
+						<div class="h1 hv-dark-gray hv-align-center">Our Mission</div>
+						<div class="hv-dark-gray" style="margin-top: 10px;">
+							Hello Velocity works to develop and evolve companies’ brands. Our 
+							goal is to understand your vision and work together to establish a 
+							clear, powerful brand identity that helps your company grow.</div>
+					</div>
+				</div>
+				<div class="hv-who col-lg-6 col-md-6 col-sm-12 col-xs-12 hv-bg-light-gray">
+					<div class="hv-who-content hv-absolute hv-absolute-center">
+						<div class="h1 hv-dark-gray hv-align-center">Who Are We?</div>
+						<div class="hv-dark-gray" style="margin-top: 10px;">
+							Hello Velocity was founded by <strong>Lukas</strong>, 
+							<strong>JS</strong>, and <strong>Kevin</strong>, three friends 
+							who met while each simultaneously attending RISD and Brown 
+							University. Hello Velocity is based out of 
+							<strong><a href="http://www.newinc.org/" target="_blank">New Inc</a></strong>, 
+							the New Museum’s arts+tech incubator program.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Footer -->	
+		<% if (mobile == "true" ){ %>
+		<div class="hv-bg-blue hv-white" style="width:100vw;">
+			<a href="http://lab.hellovelocity.com/#projects-anchor"><div class="hv-inline-block hv-align-center hv-white" style="
+				width:50vw;
+				line-height:80px;
+				height:80px;
+				border-right:1px solid white;">Projects</div></a><!--
+			--><a href="mailto:friend@hellovelocity.com"><div class="hv-inline-block hv-align-center hv-white" style="
+				width:50vw;
+				line-height:80px;
+				height:80px;">Contact</div></a>
+		</div>
+		<% } %>
+				
 	</body>
 	
-	<% if (mobile == "true" ){ %>
-	<script> 
-		$(document).ready(function() {
-			// start fullpage.js
-	    $('#fullpage').fullpage({
-				navigation: false,
-				anchors: ['home', 'how-does-it-work', 'why-gradient', 'why-gradient2', 'join-us']
-	    });
-		});
-	</script>
-	<% } else { %>
-	<script> 
-		$(document).ready(function() {
-			// start fullpage.js
-	    $('#fullpage').fullpage({
-				navigation: false,
-				anchors: ['home', 'how-does-it-work', 'why-gradient', 'join-us']
-	    });
-		});
-	</script>
-	<% } %>
-	    
-	<script> 
-		$(document).ready(function() {
-	    // click on Mailchimp submit
-	    $("#mc-embedded-subscribe").click(function() {
-				$("#mc-verify").css("opacity","1.0");	
-	    });
-	    
-		});
-	</script>
-	
+	<script src="/js/index.js"></script>
+
 </html>
 

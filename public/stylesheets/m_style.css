@@ -1,40 +1,148 @@
-.h1 {
-    font-size: 7.5vw !important;
+body {
+  width: 100vw;
 }
-.h2 {
-    font-size: 6vw !important;
-}
-.h3 {
-    font-size: 5vw !important;
-}
-.h4 {
-    font-size: 4vw !important;
-    font-weight: 400 !important;
-}
-.h5 {
-    font-size: 3.8vw !important;
-    font-weight: 400 !important;
+.hv-nav {
+  width: 100vw;
 }
 
-#mce-EMAIL {
-    width: 90vw;
-    font-size: 12vw;
+/* Web Design + Develop section */
+.hv-mobile-box {
+  position: relative;
+  width: 80vw;
 }
-.container {
-    padding-top: 0px !important;
+.hv-mobile-box {
+  margin: 0 auto;
+  top: inherit;
+  left: inherit;
+  right: inherit;
+  transform: inherit !important;
+}
+.hv-ecommerce-box {
+  margin: 0 auto;
+  top: inherit;
+  left: 50%;
+  right: inherit;
+  transform: translateX(-50%);
+}
+.hv-mobile {
+  margin: 0 auto;
+}
+.hv-mobile-ecommerce {
+  bottom: 0px;
+  left: 0px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top: 1px solid white;
+}
+.hv-web-tagline {
+  width: 80vw;
+  margin: 0 auto;
 }
 
-.g-slides {
-    width: 55vw;
+.hv-vi-text {
+	height: 70vh;
+	background-size: 200%;
 }
-.slide {
-    padding-top: 0px;
+.hv-vi-wrapper {
+  width: 80vw;
 }
-.g-slide-title {
-    padding-left:8vw;
-    padding-right:8vw;
-    margin-top: 20px;
-    margin-bottom:20px;
-    text-align:center;
-    color:#3535fc;
+.hv-vi-content {
+  height: 70vh; 
 }
+.hv-banana-image {
+  width: 90vw;
+}
+
+
+.hv-bi-page {
+	width: 80vw;
+	height: 80vh;
+	border: 0px;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+.hv-bi-content-wrapper {
+  width: 70vw;
+  top: 5vw;
+  left: 5vw;
+  position: relative;
+  transform: inherit;
+}
+.hv-bi-image {
+  background-color: white;
+  width: 60vw;
+  left: 5vw;
+  height: 40vw;
+  margin-top: 5vw;
+  display: inline-block;
+}
+
+.hv-services {
+  width: 90vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.hv .row { margin: 0px; }
+.hv-service {
+  display: inline-block;
+  text-align: center;
+  width: 44vw;
+  padding: 0px;
+  height: 20vh;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+}
+.hv-service-icon {
+  height: 15vw;
+  width: 15vw;
+  margin-right: 0px;
+  position: relative;
+  margin: 0 auto;
+}
+.hv-service-icon img {
+  width: 15vw;
+  height: 15vw;
+  margin: 10px;
+}
+.hv-service-text {
+  width: 40vw;
+}
+.hv-service-icon ,
+.hv-service-text {
+  display: inherit;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.hv-contact-section {
+  height: inherit;
+  min-height: inherit;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.hv-form {
+  width: 80vw;
+  margin: 0 auto;
+}
+.hv-form-wrapper {
+  width:80vw;
+  margin-left: 10vw;
+  min-width: inherit;
+  max-width: inherit;
+  position: relative;
+  left: inherit;
+  top: inherit;
+  transform: inherit;
+}
+
+.hv-mission,
+.hv-who {
+  height: 60vh;
+}
+
+.hv-mission-content,
+.hv-who-content {
+  width: 80vw;
+}
+

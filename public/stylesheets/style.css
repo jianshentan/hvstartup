@@ -1,156 +1,298 @@
-@-ms-viewport{
-  width: device-width;
+/* --------------------------
+   -- PRESET ELEMENTS
+   -------------------------- */
+body {
+  font-family: 'Montserrat', serif;
+  font-weight: 400;
+  font-size: 16px;
+}   
+.h1, .h2, .h3, .h4 {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px !important;
+  font-weight: 700;
 }
-.g-position-relative {
-  position: relative;
+.btn, 
+.field {
+  margin-top: 20px;
 }
-.g-position-absolute {
-  position: absolute;
+.hv-relative {
+  position: relative; 
 }
-.g-position-fixed{
-  position: fixed;
+.hv-absolute {
+  position: absolute; 
 }
-.g-center-x {
-  left: 50%;
-  transform: translateX(-50%);
+.hv-inline-block {
+  display: inline-block;
 }
-.g-center-y {
-  top: 50%;
-  transform: translateY(-50%);
+.hv-align-center {
+  text-align: center; 
 }
-.g-center {
+.hv-absolute-center {
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
-.g-window-height {
-  height: 100vh;
+.hv-blue { 
+  color: #0000ff;
 }
-.container {
-  padding-top: 76px;
+.hv-gray {
+  color: #aaa;
 }
-.underline {
-  text-decoration: underline;
+.hv-dark-gray {
+  color: #333;
 }
-.hairline-down-arrow {
-  width: 65px;
-  height: 65px;
-  position: relative;
+.hv-white {
+  color: white;
+}
+.hv-bg-blue { 
+  background-color: #0000ff;
+}
+.hv-bg-light-gray { 
+  background-color: #eee;
+}
+.hv-bg-dark-gray { 
+  background-color: #333;
+}
+.hv-bg-white {
   background-color: white;
 }
-.hairline-down-arrow:after {
-  content: "";
-  position: absolute;
-  top: 4%;
-  left: 54%;
-  width: 30px;
-  height: 30px;
-  border-width: 0px 1px 1px 0px;
-  transform: rotate(45deg) translate(-50%) skew(10deg, 10deg);
-  transform-origin: left;
-  border-style: solid;
-  border-color: #3535fc;
+.hv-section {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
-.fp-controlArrow {
-  width: 65px;
-  height: 65px;
-  position: relative;
+.hv-shadow {
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+/* --------------------------
+   -- CUSTOM ELEMENTS
+   -------------------------- */
+   
+/* Browser Box */
+.hv-browser-nav {
+  max-width:800px;
+	min-width:600px;
+	width: 60vw;
+	height:32px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	background-color:#ccc;
+	margin: 0 auto;
+}
+.hv-browser-btn {
+  width: 12px;
+  height: 12px;
   background-color: white;
-  border-width: 0 !important;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10px 0px 10px 10px;
 }
-.fp-controlArrow:after {
-  content: "";
+.hv-browser-body {
+  max-width: 800px;
+  min-width:600px;
+  width: 60vw;
+  height: 400px;
+  border: 2px solid #ccc;
+  margin: 0 auto;
+}
+.hv-browser-page {
+	width: 97%;
+	height: 95%;
+	padding: 2.5%;
+	background-color: #ffdc29;
+}
+
+/* Mobile Box */
+.hv-mobile-box {
   position: absolute;
-  top: 4%;
-  left: 54%;
-  width: 30px;
-  height: 30px;
-  border-width: 0px 1px 1px 0px;
-  transform: rotate(45deg) translate(-50%) skew(10deg, 10deg);
-  transform-origin: left;
-  border-style: solid;
-  border-color: #3535fc; 
+	top: 160px;
+	right: 50%;
+	transform: translateX(-130%) !important;
 }
-.fp-next {
-  margin-right: 30px;
+.hv-mobile {
+	border-radius: 24px;
+	width: 194px;
+	height: 400px;
+	background-color: #ccc;
+
+  /* border-radius */
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  border-radius: 24px;
+  /* box-shadow */
+  -webkit-box-shadow: rgba(0,0,0,0.3) 2px 2px 6px;
+  -moz-box-shadow: rgba(0,0,0,0.3) 2px 2px 6px;
+  box-shadow: rgba(0,0,0,0.3) 2px 2px 6px; 
 }
-.fp-next:after {
-  transform: rotate(315deg) translate(-50%) skew(10deg, 10deg);
+.hv-mobile-screen {
+	background-color: white;
+	margin: 50px 7px;
+	width: 180px;
+	height: 300px;
 }
-.fp-prev {
-  margin-left: 30px;
+.hv-mobile-content {
+	background-color: #ffdc29;
+	width: 90%;
+	height: 93%;
+	margin: 5%;
 }
-.fp-prev:after {
-  transform: rotate(135deg) translate(-50%) skew(10deg, 10deg);
-}
-.fp-tableCell {
-  height: 100% !important;
+.hv-mobile-home-btn {
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 32px;
+	height: 32px;
+	border: 2px solid white;
+	border-radius: 50%;
 }
 
-@media(max-width:767px){
-  .g-slides {
-    width: 620px;
-  }
-  .g-stamp {
-    width: 90px;
-  }
+/* ecommerce modal */
+.hv-ecommerce-box {
+  position: absolute;
+	top: 400px;
+	left: 50%;
+	transform: translateX(24%) !important;
 }
-@media(min-width:768px){
-  .g-slides {
-    width: 720px;
-  } 
-  .g-stamp {
-    width: 100px;
-  }
+.hv-ecommerce-nav {
+  width:360px;
+	height:32px;
+	background-color: white;
 }
-@media(min-width:992px){
-  .g-slides {
-    width: 820px;
-  }  
-  .g-stamp {
-    width: 110px;
-  }
+.hv-ecommerce-content {
+	width:360px;
+	height: 100px;
+	background-color: #ffdc29;
 }
-@media(min-width:1200px){
-  .g-slides {
-    width: 920px;
-  }  
-  .g-stamp {
-    width: 120px;
-  }
+.hv-ecommerce-content-circle {
+  border-radius:50%;
+	background-color:#333;
+	margin: 20px;
+	width: 60px;
+	height: 60px;
+}
+.hv-ecommerce-content-text {
+  padding-top: 30px;
+  vertical-align: top;
+}
+.hv-vi-content {
+  height: 80vh;
+}
+.hv-vi-text {
+  height: 560px;
+	background-size: 100%;
+	background-position-x: 0px;
+	background-attachment: fixed;
+	background-color: blue;
+	background-image:url('../images/bg-pinkhouse.png'); 
 }
 
-.g-border-div {
-  height: 3px;
+/* BI browser */
+.hv-bi-box {
+  
+}
+.hv-bi-nav {
+	max-width:960px;
+	width: 80vw;
+	height: 32px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	background-color:#ccc;
+	margin: 0 auto;
+}
+.hv-bi-page {
+	max-width:960px;
+	width: 80vw;
+	height: 500px;
+	border: 2px solid #ccc;
+	background-color: white;
+	margin: 0 auto;
+}
+.hv-bi-content-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 97%;
+	height: 95%;
+	background-color: #eee;
+}
+.hv-bi-image {
+  background-color: white;
+  width: 240px;
+  height: 160px;
+  margin: 10px 10px 0px 0px;
+  display: inline-block;
+}
+.hv-bi-image img {
   width: 100%;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e1a1f4+0,3535fc+67 */
-  background: rgb(225,161,244); /* Old browsers */
-  background: -moz-linear-gradient(-45deg,  rgba(225,161,244,1) 0%, rgba(53,53,252,1) 67%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg,  rgba(225,161,244,1) 0%,rgba(53,53,252,1) 67%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg,  rgba(225,161,244,1) 0%,rgba(53,53,252,1) 67%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1a1f4', endColorstr='#3535fc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.hv-service-icon {
+  background-color: #333;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin-right: 20px;
+  position: relative;
+}
+.hv-service-icon img {
+  width:60px;
+  height:60px;
+  margin: 10px;
+}
+.hv-service-text {
+  width: 180px;
+}
+.hv-service-icon ,
+.hv-service-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
-/* MAIL CHIMP */
-#mce-EMAIL {
-  border: 0px;
-  border-bottom: 2px solid #3535fc;
-  width: 560px;
-  font-size: 56px;
-  font-weight: 700;
-  text-align: center;
-  color: #3535fc;
-}	
-#mce-EMAIL:focus ,
-#mc-embedded-subscribe:focus {
-  outline-width: 0;
+.hv-contact-section {
+  height: 80vh;
+  min-height: 500px;
 }
-#mc-embedded-subscribe {
-  border: 0px;
-  padding: 10px 20px;
-  background-color: white;
-  font-size: 24px;
-  font-weight: 700;
-  text-decoration: underline;
-  color: #3535fc;
+.hv-form-wrapper {
+  width:70vw;
+  min-width:300px;
+  max-width:600px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
 }
+.field.warning{
+  border: 2px solid red; 
+}
+
+.hv-mission,
+.hv-who {
+  height: 560px;
+}
+
+.hv-mission-content,
+.hv-who-content {
+  width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
