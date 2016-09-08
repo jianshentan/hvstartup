@@ -43,6 +43,7 @@ body {
 .hv-vi-text {
 	height: 70vh;
 	background-size: 200%;
+	background-attachment: scroll;
 }
 .hv-vi-wrapper {
   width: 80vw;
