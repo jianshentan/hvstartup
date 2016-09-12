@@ -1,3 +1,14 @@
+
+/* -----------------------------
+	 ------------- Loading Overlay
+	 ----------------------------- */
+	
+$( window ).load( function() {
+  setTimeout( function() {
+    $(".hv-loading-overlay").fadeOut();
+  }, 200);
+});
+
 /* -----------------------------
 	 --- Animation (Scroll Reveal)
 	 ----------------------------- */
