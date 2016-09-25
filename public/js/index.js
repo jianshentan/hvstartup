@@ -27,6 +27,23 @@ sr.reveal(".hv-mobile-ecommerce")
 sr.reveal(".hv-bi-box");
 sr.reveal(".hv-service");
 
+/* -----------------------------
+ --- load home page when click left button
+ ----------------------------- */
+ 
+$('body').keydown(function(e) {
+  var overlay = $(".hv-loading-overlay");
+  if(e.keyCode == 37) { // left
+  
+    overlay.addClass('blue');
+    overlay.css("left", "-100vw");
+    overlay.show();
+    overlay.animate({ "left": "0px" }, function() {
+      window.location.href = "http://www.hellovelocity.com";
+    });
+    
+  }
+});
 
 /* -----------------------------
 	 -- Navbar hide on scroll down
