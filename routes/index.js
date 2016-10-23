@@ -12,7 +12,7 @@ router.get('/submit', function(req, res) {
     organization: req.query.organization,
     description: req.query.description
   }
- 
+
   // sendgrid to send email
   var helper = require('sendgrid').mail;
   var from_email = new helper.Email('bot@hellovelocity.com');
@@ -38,6 +38,7 @@ router.get('/submit', function(req, res) {
     console.log(response.statusCode);
     console.log(response.body);
     console.log(response.headers);
+    res.sendStatus(200);
   });
  
 });
